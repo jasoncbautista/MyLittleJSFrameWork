@@ -22,23 +22,28 @@ var root = this;
 
     
     J.map= function(list, callback){
+
+
+        var newList = [];
         if(Array.isArray(list)){
-            
+
             // Loop over array
             var len = list.length;
             for(var ii = 0; ii < len; ii++){
-                callback(list[ii]);
+               newList.push( callback(list[ii]) );
             }
         } else{
 
             // Loop over hashMap:
             for (prop in list){
                 if(Object.prototype.hasOwnProperty.call(list, xx){
-                    callback(xx);
+                    newList.push( callback(xx) );
                 }
             }
 
         }
+
+        return newList;
 
     };
 
