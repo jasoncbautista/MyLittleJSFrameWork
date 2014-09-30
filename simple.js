@@ -14,8 +14,6 @@ var root = this;
 
     // Watch values and update them
     
-
-
     // My own little jQuery, mootools
     root.JQ = function(){
     };
@@ -36,15 +34,16 @@ var root = this;
 
             // Loop over hashMap:
             for (prop in list){
-                if(Object.prototype.hasOwnProperty.call(list, xx){
-                    newList.push( callback(xx) );
+                
+                if(Object.prototype.hasOwnProperty.call(list, prop)){
+                    // value, key
+                    newList.push( callback(list[prop], prop) );
                 }
             }
 
         }
 
         return newList;
-
     };
 
 
