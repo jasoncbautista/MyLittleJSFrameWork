@@ -18,6 +18,14 @@ var root = this;
     };
 
 
+    /**
+    * Simple map function. Loops over a list and applies a callback, generates
+    * a new array based on that list. 
+    *
+    * @param {object} an array or map
+    * @param {function} a callback to apply to each object
+    * @return {array} a list with all the new values
+    **/
     J.map= function(list, callback){
 
         var newList = [];
