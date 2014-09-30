@@ -17,7 +17,6 @@ var root = this;
     root.JQ = function(){
     };
 
-
     /**
     * Simple map function. Loops over a list and applies a callback, generates
     * a new array based on that list. 
@@ -27,12 +26,12 @@ var root = this;
     * @return {array} a list with all the new values
     **/
     J.map= function(list, callback){
-
         var newList = [];
+
         if(Array.isArray(list)){
+            var len = list.length;
 
             // Loop over array
-            var len = list.length;
             for(var ii = 0; ii < len; ii++){
                newList.push( callback(list[ii]) );
             }
@@ -51,7 +50,6 @@ var root = this;
 
         return newList;
     };
-
 
     // A simple null function, does nothing
     J.noop = function(){};
