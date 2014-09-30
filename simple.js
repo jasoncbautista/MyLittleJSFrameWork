@@ -1,17 +1,15 @@
 var root = this;
 
 (function(){
-    root.JAZON = {
+    root.J$= {
         Core: {}
     };
 
     console.log('root', root);
 
-
-    root.Running = {};
-    root.Running.Entities = {};
+    root.J$.Running = {};
+    root.J$.Running.Entities = {};
 
     // Watch values and update them
-
 
 });
