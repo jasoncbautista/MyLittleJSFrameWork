@@ -7,7 +7,6 @@ var root = this;
         Core: {}
     };
 
-    console.log('root', root);
 
     root.J$.Running = {};
     root.J$.Running.Entities = {};
@@ -18,9 +17,8 @@ var root = this;
     root.JQ = function(){
     };
 
-    
-    J.map= function(list, callback){
 
+    J.map= function(list, callback){
 
         var newList = [];
         if(Array.isArray(list)){
@@ -50,6 +48,7 @@ var root = this;
     // A simple null function, does nothing
     J.noop = function(){};
 
+    console.log('root', root);
     // document.querySelectorAll("#templates")[0].innerHTML
 
 })(root);
