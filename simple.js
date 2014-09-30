@@ -51,6 +51,8 @@ var root = this;
         return newList;
     };
 
+    // UID for Model ==>  url route  / path callback fxns, hash url
+
     // A simple null function, does nothing
     J.noop = function(){};
 
@@ -64,6 +66,10 @@ var root = this;
         tempalteX.render({
             "name", ModelX
         });
+
+        TemplateMaster  -> manages subs
+        // Rerender everything around it
+
     */
 
 })(root);
