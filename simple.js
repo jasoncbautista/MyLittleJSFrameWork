@@ -41,11 +41,11 @@ var root = this;
             for (prop in list){
                 
                 if(Object.prototype.hasOwnProperty.call(list, prop)){
+
                     // value, key
                     newList.push( callback(list[prop], prop) );
                 }
             }
-
         }
 
         return newList;
@@ -56,5 +56,14 @@ var root = this;
 
     console.log('root', root);
     // document.querySelectorAll("#templates")[0].innerHTML
+
+    
+    /*
+        ModelX.set("name", "D");
+
+        tempalteX.render({
+            "name", ModelX
+        });
+    */
 
 })(root);
