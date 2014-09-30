@@ -1,2 +1,6 @@
 # MyLittleJSFrameWork
 
+
+# Goal:
+
+No jQuery
